@@ -13,6 +13,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        DispatchQueue.main.sync {
+            
+            self.view.backgroundColor = .black // this will never be reached
+            
+            
+        }
+        
     }
 
 
