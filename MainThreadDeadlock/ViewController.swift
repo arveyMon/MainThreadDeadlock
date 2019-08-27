@@ -17,6 +17,9 @@ class ViewController: UIViewController {
             
             self.view.backgroundColor = .black // this will never be reached
             
+            /*
+             Calling sync from the main thread will cause a deadlock because the main queue is a serial queue and sync stops current queue execution until passed block/closure has finished.
+             */
             
         }
         
